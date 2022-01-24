@@ -3,6 +3,7 @@
 
 import streamlit as st
 import matplotlib.pyplot as plt
+import pandas as pd
 from PIL import Image
 from math import e
 
@@ -68,7 +69,7 @@ while x<=t:
 fig, ax = plt.subplots()
 ax.plot(list_t,list_analitik, linestyle="-", marker="o", label="Solusi Analitik")
 ax.plot(list_t,list_num, linestyle="-", marker="o", label="Solusi Numerik")
-ax.set_title(f"Solusi Analitik VS Solusi Numerik (c = {c} kg/s)", fontsize=15)
+ax.set_title(f"Solusi Analitik VS Solusi Numerik (c={c})", fontsize=16)
 ax.set_xlabel("t(s)", fontsize=12)
 ax.set_ylabel("v(m/s)", fontsize=12)
 ax.grid(axis='both')
@@ -76,4 +77,11 @@ ax.legend()
 ax.set_axisbelow(True)
 plt.tight_layout()
 col1.pyplot(fig)
+
+col2.subheader("Tabel")
+df_view3 = pd.DataFrame(
+    {'Waktu (t)': list_t,'Solusi Analitik': list_analitik,
+     'Solusi Numerik': list_num
+     })
+col2.dataframe(df_view3, 300, 475)
 ########################################
