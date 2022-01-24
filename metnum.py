@@ -78,10 +78,10 @@ ax.set_axisbelow(True)
 plt.tight_layout()
 col1.pyplot(fig)
 
-co2.subheader("Tabel")
+col2.subheader("Tabel")
 df_view3 = pd.DataFrame(
     {'Waktu (t)': list_t,'Solusi Analitik v(t)': list_analitik,
      'Solusi Numerik v(t)': list_num
      })
-co2.dataframe(df_view3)
+col2.dataframe(df_view3)
 ########################################
