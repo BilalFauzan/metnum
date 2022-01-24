@@ -38,7 +38,7 @@ c=st.sidebar.number_input("Masukkan Nilai C (kg/s)", value=12.5, min_value=0.01)
 #################################################
 
 ############### Tugas 01 ###############
-col1, col2 = st.columns([3,1])
+col1, col2 = st.columns([3,2])
 col1.subheader("Tugas 01")
 
 g=9.81
