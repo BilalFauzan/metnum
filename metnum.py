@@ -67,8 +67,8 @@ while x<=t:
     list_analitik.append(v_analitik)
 
 fig, ax = plt.subplots()
-ax.plot(list_t,list_analitik, linestyle="-", marker="o", label="Solusi Analitik")
-ax.plot(list_t,list_num, linestyle="-", marker="o", label="Solusi Numerik")
+ax.plot(list_t,list_analitik, linestyle="-", marker="o", label="v(t) Solusi Analitik")
+ax.plot(list_t,list_num, linestyle="-", marker="o", label="v(t) Solusi Numerik")
 ax.set_title(f"Solusi Analitik VS Solusi Numerik (c={c})", fontsize=16)
 ax.set_xlabel("t(s)", fontsize=12)
 ax.set_ylabel("v(m/s)", fontsize=12)
