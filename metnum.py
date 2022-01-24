@@ -17,7 +17,7 @@ st.set_page_config(
     }
     )
       # this needs to be the first Streamlit command called
-colT1,colT2 = st.columns([3,8])
+colT1,colT2 = st.columns([2,8])
 with colT2:
     st.title("Metode Numerik Teknik Perminyakan ")
 st.markdown("*Kelas 02")
