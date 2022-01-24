@@ -83,5 +83,5 @@ df_view3 = pd.DataFrame(
     {'Waktu (t)': list_t,'Solusi Analitik': list_analitik,
      'Solusi Numerik': list_num
      })
-col2.dataframe(df_view3, 300, 475)
+col2.dataframe(df_view3)
 ########################################
